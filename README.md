@@ -79,7 +79,12 @@ Figure 3. Workflow for consensus sequence reconstruction from Arctic HGDP/SGDP s
 
 -------------------------------------------------------------------------------------------------------
 
-<img width="790" height="1519" alt="image" src="https://github.com/user-attachments/assets/cd329b65-4cc9-4f0f-8c88-d423b0bc967f" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cd329b65-4cc9-4f0f-8c88-d423b0bc967f" 
+       alt="image"
+       width="790" height="1519"
+       style="transform: rotate(90deg);">
+</p>
 
 -------------------------------------------------------------------------------------------------------
 <img width="816" height="1447" alt="image" src="https://github.com/user-attachments/assets/0eb7ca7d-074e-4e9c-bed7-ec699d0a306a" />
