@@ -48,21 +48,61 @@ Runs quality control checks on the reconstructed haplotypes. It checks sequence 
 (Basically: QC for your haplotype FASTAs.)
 
 ## Important Figures..
+-------------------------------------------------------------------------------------------------------
 
 Table 1a. Genomic coordinates and annotation of the human OPN1SW gene (GRCh37/hg19, Ensembl release 75).
  <img width="950" height="125" alt="image" src="https://github.com/user-attachments/assets/3e3a4e86-b297-442b-bb17-d3b6c3ab7985" />
+
+-------------------------------------------------------------------------------------------------------
 
 
 Table 1b. Exon-level annotation of OPN1SW (GRCh37/hg19, Ensembl release 75).
 <img width="822" height="175" alt="image" src="https://github.com/user-attachments/assets/2aa615b0-1caf-4e4a-b6db-0aaa5915d629" />
 
+-------------------------------------------------------------------------------------------------------
+
 Figure 1. Genomic structure of the human OPN1SW locus (GRCh37, chromosome 7). Schematic of OPN1SW (chr7:128,407,545–128,420,844, GRCh37) with ±5 kb flanks. Exons (E1-E5, dark blue), introns (I1-I4, light blue), and 5′/3′ flanking regions (grey) are shown. Local coordinates (bottom) span the 13.3 kb extracted region, genomic coordinates (top) indicate positions on chromosome 7.
 <img width="965" height="200" alt="image" src="https://github.com/user-attachments/assets/3695f92c-7fb2-4532-9ec3-53639a64e8b8" />
 
-<img width="853" height="463" alt="image" src="https://github.com/user-attachments/assets/6b86f37f-f55d-47fb-b024-065b5e1685d6" />
-
+-------------------------------------------------------------------------------------------------------
 Table 2. Final dataset composition after quality control and filtering
 <img width="853" height="463" alt="image" src="https://github.com/user-attachments/assets/7e1283ec-0cb5-4cbb-819e-80685fa35314" />
+
+-------------------------------------------------------------------------------------------------------
+
+Figure 2. Workflow for haplotype consensus sequence reconstruction at the OPN1SW locus. Pipeline illustrating the steps from raw input data to haplotype FASTA output. Chromosome-wide 1000 Genomes VCFs were subset for the OPN1SW region (chr7:128,407,545–128,420,844, GRCh37, ±5 kb) using tabix while the corresponding reference sequence was retrieved from Ensembl and indexed. Sample identifiers were extracted with bcftools query -l, and phased haplotype sequences were reconstructed per individual using bcftools consensus. The resulting haplotype FASTAs (~13 kb each) were used for further downstream analysis.
+<img width="1004" height="247" alt="image" src="https://github.com/user-attachments/assets/a3975fe0-ea45-4cc3-9530-0ac0c279fb05" />
+
+-------------------------------------------------------------------------------------------------------
+Figure 3. Workflow for consensus sequence reconstruction from Arctic HGDP/SGDP samples. Paired-end FASTQ reads were retrieved from the IGSR portal and processed through a custom pipeline. Reads were adapter-trimmed and quality-filtered with fastp, then aligned to the GRCh37 reference (regional slice ±5 kb around OPN1SW) using bwa-mem. Variants within the target interval were called with FreeBayes, filtered with bcftools, and compressed/indexed with bgzip/tabix. Consensus sequences were reconstructed with bcftools consensus, encoding heterozygous sites with IUPAC ambiguity codes and applying locus-specific ploidy rules. Outputs included per-sample consensus FASTAs (~13 kb), filtered VCFs, and indexed BAMs, which were pooled with 1000 Genomes haplotypes for downstream alignment and phylogenetic analysis.
+<img width="994" height="244" alt="image" src="https://github.com/user-attachments/assets/291376d1-a4a3-4320-8fe8-cf1e6618a975" />
+
+-------------------------------------------------------------------------------------------------------
+
+<img width="790" height="1519" alt="image" src="https://github.com/user-attachments/assets/cd329b65-4cc9-4f0f-8c88-d423b0bc967f" />
+
+-------------------------------------------------------------------------------------------------------
+<img width="816" height="1447" alt="image" src="https://github.com/user-attachments/assets/0eb7ca7d-074e-4e9c-bed7-ec699d0a306a" />
+
+-------------------------------------------------------------------------------------------------------
+<img width="945" height="1524" alt="image" src="https://github.com/user-attachments/assets/91f23a70-178a-41ad-a0ba-40b4a866c819" />
+
+-------------------------------------------------------------------------------------------------------
+Figure 6a. Per-site FST Manhattan plot with exon/intron overlay.
+<img width="952" height="430" alt="image" src="https://github.com/user-attachments/assets/99347d69-4190-4927-b0e1-f2d211d0ed4f" />
+
+-------------------------------------------------------------------------------------------------------
+Figure 6b. Windowed Skyline FST with feature annotation.
+<img width="940" height="470" alt="image" src="https://github.com/user-attachments/assets/86c40df5-befb-4eac-9b35-a9e2bcaf9640" />
+
+
+-------------------------------------------------------------------------------------------------------
+Figure 6c. Scatterplot of alternate-allele frequencies in Arctic vs. equatorial populations.
+<img width="843" height="632" alt="image" src="https://github.com/user-attachments/assets/b7f86ead-5f0d-4a98-b011-4b3c6cda634b" />
+
+-------------------------------------------------------------------------------------------------------
+
+
 
 ## Citation
 If you use this repository or workflows, please cite as:
