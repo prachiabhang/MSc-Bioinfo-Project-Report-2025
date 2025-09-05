@@ -83,10 +83,10 @@ Figure 3. Workflow for consensus sequence reconstruction from Arctic HGDP/SGDP s
 
 
 -------------------------------------------------------------------------------------------------------
-<img width="816" height="1447" alt="image" src="https://github.com/user-attachments/assets/7f385330-ccd9-416f-ba81-6d05c7dcf9b0" />
+<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/d6bfa343-a888-443a-9074-1017a12c5bf2" />
 
 -------------------------------------------------------------------------------------------------------
-<img width="945" height="1524" alt="image" src="https://github.com/user-attachments/assets/a12e9b51-d57a-4fa4-b0fc-38342783f249" />
+<img width="940" height="583" alt="image" src="https://github.com/user-attachments/assets/ed7c2f2e-e847-43b2-95ec-332935a04683" />
 
 -------------------------------------------------------------------------------------------------------
 Figure 6a. Per-site FST Manhattan plot with exon/intron overlay.
