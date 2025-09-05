@@ -34,12 +34,25 @@ between Arctic and equatorial populations using genomic datasets and population 
 6. Alignment (MAFFT), phylogeny (IQ-TREE).  
 7. Population differentiation with Hudson’s FST (scikit-allel).  
 
-## Key Figures
-- **Phylogeny of Arctic vs. Equatorial haplotypes**  
+## List of scripts used 
+A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with valuable input and support.
 
+## 1. Consensus_haplotype_sequence_reconstruction_pipeline.sh
+A master script that takes 1000 Genomes VCFs and turns them into haplotype FASTA files.
+(In short: VCF → FASTA haplotypes.)
 
-- **Population differentiation (Hudson’s FST)**  
- 
+## 2. sbatch_Arc.sh
+A simple Slurm job submission script to run the Arctic sample pipeline on the HPC cluster.
+(Think of it as the “launcher” for Arctic processing.)
+
+## 3. FASTQ_to_VCF_FAST_Arc.sh
+The full pipeline for Arctic samples. It starts from raw FASTQs, trims and aligns them, calls variants, and outputs consensus FASTA haplotypes.
+(FASTQ >> BAM >> VCF >> FASTA.)
+
+## 4. run_fasta_qc_allinone.sh
+Runs quality control checks on the reconstructed haplotypes. It checks sequence length, GC content, missing bases (Ns), and flags duplicates.
+(Basically: QC for your haplotype FASTAs.)
+
 
 ## Citation
 If you use this repository or workflows, please cite as:
