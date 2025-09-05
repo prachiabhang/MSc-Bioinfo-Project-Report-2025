@@ -54,6 +54,15 @@ Table 1a. Genomic coordinates and annotation of the human OPN1SW gene (GRCh37/hg
 
 
 Table 1b. Exon-level annotation of OPN1SW (GRCh37/hg19, Ensembl release 75).
+<img width="822" height="175" alt="image" src="https://github.com/user-attachments/assets/2aa615b0-1caf-4e4a-b6db-0aaa5915d629" />
+
+Figure 1. Genomic structure of the human OPN1SW locus (GRCh37, chromosome 7). Schematic of OPN1SW (chr7:128,407,545–128,420,844, GRCh37) with ±5 kb flanks. Exons (E1-E5, dark blue), introns (I1-I4, light blue), and 5′/3′ flanking regions (grey) are shown. Local coordinates (bottom) span the 13.3 kb extracted region, genomic coordinates (top) indicate positions on chromosome 7.
+<img width="965" height="200" alt="image" src="https://github.com/user-attachments/assets/3695f92c-7fb2-4532-9ec3-53639a64e8b8" />
+
+<img width="853" height="463" alt="image" src="https://github.com/user-attachments/assets/6b86f37f-f55d-47fb-b024-065b5e1685d6" />
+
+Table 2. Final dataset composition after quality control and filtering
+<img width="853" height="463" alt="image" src="https://github.com/user-attachments/assets/7e1283ec-0cb5-4cbb-819e-80685fa35314" />
 
 ## Citation
 If you use this repository or workflows, please cite as:
