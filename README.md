@@ -17,18 +17,12 @@ between Arctic and equatorial populations using genomic datasets and population 
   - 1000 Genomes Project (VCF-based haplotypes)  
   - HGDP/SGDP Arctic cohort (FASTQ -- consensus haplotypes)  
 - **Methods**: haplotype reconstruction, QC, multiple sequence alignment (MAFFT), 
-  phylogenetic inference (IQ-TREE), population differentiation (Hudson’s FST).   
-
-## Repository Structure
-- `scripts/` – Bash and Python pipelines (haplotype reconstruction, QC, FST analysis).  
-- `results/` – Figures and tables from the dissertation.  
-- `data/` – Processed haplotypes and QC summaries (raw data from 1KG/SGDP not redistributed).  
-- `docs/` – Supplementary materials and dissertation report.  
+  phylogenetic inference (IQ-TREE), population differentiation (Hudson’s FST).     
 
 ## Workflow Summary
 1. Extract OPN1SW ±5 kb locus from 1000 Genomes (VCFs).  
 2. Generate consensus haplotypes with `bcftools consensus`.  
-3. For HGDP/SGDP Arctic samples: FASTQ -> trimming (fastp) -> alignment (bwa-mem) -> variant calling (FreeBayes) -> consensus FASTA.  
+3. For HGDP/SGDP Arctic samples: FASTQ >> trimming (fastp) >> alignment (bwa-mem) >> variant calling (FreeBayes) >> consensus FASTA.  
 4. QC of haplotypes (Ns, GC%, duplicates).  
 5. Redundancy reduction with CD-HIT.  
 6. Alignment (MAFFT), phylogeny (IQ-TREE).  
@@ -53,6 +47,13 @@ The full pipeline for Arctic samples. It starts from raw FASTQs, trims and align
 Runs quality control checks on the reconstructed haplotypes. It checks sequence length, GC content, missing bases (Ns), and flags duplicates.
 (Basically: QC for your haplotype FASTAs.)
 
+## Important Figures..
+
+Table 1a. Genomic coordinates and annotation of the human OPN1SW gene (GRCh37/hg19, Ensembl release 75).
+ <img width="950" height="125" alt="image" src="https://github.com/user-attachments/assets/3e3a4e86-b297-442b-bb17-d3b6c3ab7985" />
+
+
+Table 1b. Exon-level annotation of OPN1SW (GRCh37/hg19, Ensembl release 75).
 
 ## Citation
 If you use this repository or workflows, please cite as:
