@@ -32,14 +32,14 @@ between Arctic and equatorial populations using genomic datasets and population 
 4. QC of haplotypes (Ns, GC%, duplicates).  
 5. Redundancy reduction with CD-HIT.  
 6. Alignment (MAFFT), phylogeny (IQ-TREE).  
-7. Population differentiation with Hudson’s FST (scikit-allel).  
+7. Population differentiation with Hudson’s FST (scikit-allel): https://www.kaggle.com/code/dprdx1/fst-vfinal
 
 ## List of scripts used 
 A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with valuable input and support.
 
 ## 1. Consensus_haplotype_sequence_reconstruction_pipeline.sh
 A master script that takes 1000 Genomes VCFs and turns them into haplotype FASTA files.
-(In short: VCF → FASTA haplotypes.)
+(In short: VCF >> FASTA haplotypes.)
 
 ## 2. sbatch_Arc.sh
 A simple Slurm job submission script to run the Arctic sample pipeline on the HPC cluster.
