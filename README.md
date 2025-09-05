@@ -46,7 +46,7 @@ If you use this repository or workflows, please cite as:
 
 ```bibtex
 @misc{YourName_OPN1SW_2025,
-  author       = {Your Name},
+  author       = {Prachi R Abhang},
   title        = {Genetic Differentiation and Phylogenetic Analysis of the Human OPN1SW Gene Across Arctic and Equatorial Populations)},
   year         = {2025},
   howpublished = {\url{https://github.com/your-username/opsin-evolution}},
