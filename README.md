@@ -5,6 +5,8 @@ MSc Bioinfo Project Report 2025
 # Genetic Differentiation and Phylogenetic Analysis of the Human OPN1SW Gene Across Arctic and Equatorial Populations
 
  **Under the guidance of Dr. Davide Pisani**
+ A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with his valuable inputs and support.
+
 
 This repository contains the scripts, analysis workflows, and figures 
 associated with my MSc Bioinformatics dissertation at the University of Bristol (2025).
@@ -32,7 +34,6 @@ between Arctic and equatorial populations using genomic datasets and population 
 7. Population differentiation with Hudson’s FST (scikit-allel): https://www.kaggle.com/code/dprdx/fst-vfinal
 
 ## List of scripts used 
-A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with his valuable input and support.
 
 ## 1. Consensus_haplotype_sequence_reconstruction_pipeline.sh
 A master script that takes 1000 Genomes VCFs and turns them into haplotype FASTA files.
