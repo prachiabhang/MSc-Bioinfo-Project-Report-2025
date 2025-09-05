@@ -19,15 +19,13 @@ between Arctic and equatorial populations using genomic datasets and population 
 - **Methods**: haplotype reconstruction, QC, multiple sequence alignment (MAFFT), 
   phylogenetic inference (IQ-TREE), population differentiation (Hudson’s FST).   
 
-## 📂 Repository Structure
+## Repository Structure
 - `scripts/` – Bash and Python pipelines (haplotype reconstruction, QC, FST analysis).  
 - `results/` – Figures and tables from the dissertation.  
 - `data/` – Processed haplotypes and QC summaries (raw data from 1KG/SGDP not redistributed).  
 - `docs/` – Supplementary materials and dissertation report.  
 
-## ⚙️ Workflow Summary
-![Pipeline](results/figs/Figure2_pipeline.png)
-
+## Workflow Summary
 1. Extract OPN1SW ±5 kb locus from 1000 Genomes (VCFs).  
 2. Generate consensus haplotypes with `bcftools consensus`.  
 3. For HGDP/SGDP Arctic samples: FASTQ -> trimming (`fastp`) -> alignment (`bwa-mem`) -> variant calling (`FreeBayes`) -> consensus FASTA.  
@@ -36,14 +34,14 @@ between Arctic and equatorial populations using genomic datasets and population 
 6. Alignment (MAFFT), phylogeny (IQ-TREE).  
 7. Population differentiation with Hudson’s FST (scikit-allel).  
 
-## 📊 Key Figures
+## Key Figures
 - **Phylogeny of Arctic vs. Equatorial haplotypes**  
 
 
 - **Population differentiation (Hudson’s FST)**  
  
 
-## 📖 Citation
+## Citation
 If you use this repository or workflows, please cite as:
 
 ```bibtex
