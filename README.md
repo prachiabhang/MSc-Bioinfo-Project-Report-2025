@@ -5,7 +5,7 @@ MSc Bioinfo Project Report 2025
 # Genetic Differentiation and Phylogenetic Analysis of the Human OPN1SW Gene Across Arctic and Equatorial Populations
 
  **Under the guidance of Dr. Davide Pisani**
- A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with the valuable inputs and support.
+ A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with his valuable inputs and support.
 
 
 This repository contains the scripts, analysis workflows, and figures 
