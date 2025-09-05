@@ -4,18 +4,21 @@ MSc Bioinfo Project Report 2025
 
 # Genetic Differentiation and Phylogenetic Analysis of the Human OPN1SW Gene Across Arctic and Equatorial Populations
 
+ **Under the guidance of Dr. Davide Pisani**
+
 This repository contains the scripts, analysis workflows, and figures 
 associated with my MSc Bioinformatics dissertation at the University of Bristol (2025).
 
+
 ## Project Overview
-The **OPN1SW** gene encodes the short-wavelength–sensitive opsin (blue cone photopigment), 
+The **OPN1SW** gene encodes the short-wavelength sensitive opsin (blue cone photopigment), 
 critical for human colour vision. This study investigates whether OPN1SW shows signatures of **latitude-linked adaptation** 
 between Arctic and equatorial populations using genomic datasets and population genetic analyses.
 
 - **Hypothesis**: OPN1SW haplotypes show subtle but detectable divergence between populations living under contrasting light environments.
 - **Datasets**:  
   - 1000 Genomes Project (VCF-based haplotypes)  
-  - HGDP/SGDP Arctic cohort (FASTQ -- consensus haplotypes)  
+  - HGDP/SGDP Arctic cohort (FASTQ >> consensus haplotypes)  
 - **Methods**: haplotype reconstruction, QC, multiple sequence alignment (MAFFT), 
   phylogenetic inference (IQ-TREE), population differentiation (Hudson’s FST).     
 
@@ -26,10 +29,10 @@ between Arctic and equatorial populations using genomic datasets and population 
 4. QC of haplotypes (Ns, GC%, duplicates).  
 5. Redundancy reduction with CD-HIT.  
 6. Alignment (MAFFT), phylogeny (IQ-TREE).  
-7. Population differentiation with Hudson’s FST (scikit-allel): https://www.kaggle.com/code/dprdx1/fstvfinal
+7. Population differentiation with Hudson’s FST (scikit-allel): https://www.kaggle.com/code/dprdx/fst-vfinal
 
 ## List of scripts used 
-A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with valuable input and support.
+A big thanks to **Dr. Christopher Kay**. The following scripts were adapted and developed during the course of this MSc project, with his valuable input and support.
 
 ## 1. Consensus_haplotype_sequence_reconstruction_pipeline.sh
 A master script that takes 1000 Genomes VCFs and turns them into haplotype FASTA files.
