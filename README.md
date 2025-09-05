@@ -21,7 +21,7 @@ between Arctic and equatorial populations using genomic datasets and population 
 
 ## Workflow Summary
 1. Extract OPN1SW ±5 kb locus from 1000 Genomes (VCFs).  
-2. Generate consensus haplotypes with `bcftools consensus`.  
+2. Generate consensus haplotypes with bcftools consensus.  
 3. For HGDP/SGDP Arctic samples: FASTQ >> trimming (fastp) >> alignment (bwa-mem) >> variant calling (FreeBayes) >> consensus FASTA.  
 4. QC of haplotypes (Ns, GC%, duplicates).  
 5. Redundancy reduction with CD-HIT.  
