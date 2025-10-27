@@ -1,4 +1,4 @@
-# MSc-Bioinfo-Project-Report-2025
+# Investigating Latitude-Linked Adaptation in the Human Blue Opsin Gene (OPN1SW)
 MSc Bioinfo Project Report 2025
 
 
