@@ -1,7 +1,3 @@
-# Investigating Latitude-Linked Adaptation in the Human Blue Opsin Gene (OPN1SW)
-MSc Bioinfo Project Report 2025
-
-
 # Genetic Differentiation and Phylogenetic Analysis of the Human OPN1SW Gene Across Arctic and Equatorial Populations
 
  **Under the guidance of Dr. Davide Pisani**
